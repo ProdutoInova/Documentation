@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
+  <collaboration id="Collaboration_1qhw039">
+    <participant id="Participant_1qnfqd6" name="Arquiteto de Software" processRef="Process_1" />
+    <participant id="Participant_0ylyq6v" name="Gerênte de Projeto" processRef="Process_0x6ltpw" />
+    <messageFlow id="MessageFlow_1pqut1r" sourceRef="Task_1is7def" targetRef="Task_0swddom" />
+  </collaboration>
+  <process id="Process_1" isExecutable="false">
+    <startEvent id="StartEvent_0bwfaqk">
+      <outgoing>SequenceFlow_09yaea4</outgoing>
+    </startEvent>
+    <task id="Task_1is7def" name="Alteração dos diagramas, para atender a atualização">
+      <incoming>SequenceFlow_09yaea4</incoming>
+    </task>
+    <sequenceFlow id="SequenceFlow_09yaea4" sourceRef="StartEvent_0bwfaqk" targetRef="Task_1is7def" />
+  </process>
+  <process id="Process_0x6ltpw">
+    <task id="Task_0swddom" name="Validação das alterações, ao alterar a versão da documentação" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Collaboration_1qhw039">
+      <bpmndi:BPMNShape id="Participant_1qnfqd6_di" bpmnElement="Participant_1qnfqd6">
+        <omgdc:Bounds x="127" y="57" width="600" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_0bwfaqk_di" bpmnElement="StartEvent_0bwfaqk">
+        <omgdc:Bounds x="190" y="159" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="208" y="200" width="0" height="10" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1is7def_di" bpmnElement="Task_1is7def">
+        <omgdc:Bounds x="276.89" y="137" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_09yaea4_di" bpmnElement="SequenceFlow_09yaea4">
+        <omgdi:waypoint xsi:type="omgdc:Point" x="226" y="177" />
+        <omgdi:waypoint xsi:type="omgdc:Point" x="277" y="177" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="251.5" y="157" width="0" height="10" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_0ylyq6v_di" bpmnElement="Participant_0ylyq6v">
+        <omgdc:Bounds x="126.88999999999999" y="306.813" width="600" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_0swddom_di" bpmnElement="Task_0swddom">
+        <omgdc:Bounds x="276.89" y="376.813" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="MessageFlow_1pqut1r_di" bpmnElement="MessageFlow_1pqut1r">
+        <omgdi:waypoint xsi:type="omgdc:Point" x="332" y="217" />
+        <omgdi:waypoint xsi:type="omgdc:Point" x="331.89" y="290" />
+        <omgdi:waypoint xsi:type="omgdc:Point" x="329" y="290" />
+        <omgdi:waypoint xsi:type="omgdc:Point" x="329" y="377" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="330.445" y="270" width="0" height="10" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
